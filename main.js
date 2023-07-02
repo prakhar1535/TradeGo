@@ -1,5 +1,17 @@
 const hamburger = document.querySelector('.hamburger');
 const navbar = document.querySelector('.navbar ul');
+// const navbar = document.querySelector('.navbar ul');
+const stockBtn = document.getElementById('stocks');
+
+stockBtn.addEventListener('click', function() {
+  // stockBtn.classList.toggle('shift');
+  alert('hello');
+});
+
+const header = document.querySelector('.navbar')
+window.addEventListener("scroll",function(){
+    header.classList.toggle("sticky",window.scrollY>80)
+})
 
 hamburger.addEventListener('click', () => {
   navbar.classList.toggle('show');
