@@ -40,6 +40,7 @@ window.addEventListener('load', checkScreenWidth);
 window.addEventListener('resize', checkScreenWidth);
 
 // fetching data for Landing Page stocks apple --------------------------------------------------------------------------------------
+
 const chartElements = document.querySelectorAll('.charts div');
 
 chartElements.forEach(chartElement => {
@@ -57,7 +58,7 @@ function displayData(chartElement, responseData) {
   const symbol = responseData.meta.symbol;
   const highprice1 = responseData.values[0].high;
   const highprice2 = responseData.values[1].high;
-
+  
   const closePrice = parseFloat((highprice1 - highprice2).toFixed(6));
 
   let color;

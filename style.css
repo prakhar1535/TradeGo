@@ -29,20 +29,22 @@ body {
   
   .navbar {
    /* position: fixed; */
-    width: 100vw;
+    width: 100%;
     /* top: 0; */
     /* right: 0; */
-    z-index: 1000;
+    z-index: 99999999;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 30px 10%;
+    padding: -10px;
     transition: all .50s ease;
+    padding-top: 30px;
     
   }
   .navbar.sticky {
-    padding: 12px 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: var(--other-color);
     position: sticky;
     top: 0px;
@@ -54,6 +56,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-grow: 1;
   }
   
   .navbar li {
@@ -105,6 +108,7 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    z-index: 99999999999999;
   }
   
   .line {
@@ -112,6 +116,7 @@ body {
     height: 3px;
     background-color: #333;
     margin: 3px 0;
+    z-index: 99999999999;
   }
   ul .home a{
     color: #ccff00;
@@ -156,7 +161,7 @@ body {
       font-size: 30px;
       background: #ccff00;
       border-radius: 200px;
-      box-shadow: 5px 5px 100px #ccff00aa;
+      box-shadow: 5px 5px 100px #ccff0063;
       transition: 0.3s;
       display: flex;
 
@@ -333,7 +338,7 @@ justify-content: space-between;
 
 .chartSection{
   
-  padding: 0 10rem;
+  padding: 0 8rem;
  
   background-color: rgb(8, 4, 4);
   margin-top: 6rem;
@@ -391,8 +396,7 @@ align-items: center;
 }
 
 .dropArrow >img {
-  width: 100vw;
-  
+  width: 100%;
   margin: auto;
 
 }
@@ -469,6 +473,9 @@ align-items: center;
   color: var(--text-color);
   font-size: 20px;
   font-weight: 600;
+}
+#trade{
+  padding-top: 100px;
 }
 .main-d i{
   vertical-align: middle;
