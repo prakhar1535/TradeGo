@@ -1,7 +1,7 @@
 const hamburger = document.querySelector('.hamburger');
 const navbar = document.querySelector('.navbar ul');
 // const navbar = document.querySelector('.navbar ul');
-const stockBtn = document.getElementById ('get-started');
+// const stockBtn = document.getElementById ('get-started');
 
 const header = document.querySelector('.navbar')
 window.addEventListener("scroll",function(){

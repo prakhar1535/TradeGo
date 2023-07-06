@@ -42,7 +42,7 @@ body {
     padding-top: 30px;
     
   }
-  .navbar.sticky {
+  .navbar .sticky {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: var(--other-color);
@@ -326,6 +326,7 @@ body {
     background-color:  #ccff00;
     color: black;
     font-size: 20px;
+    z-index: 99;
 }
 .sponsers{
   padding: 0 3rem;
@@ -340,7 +341,7 @@ justify-content: space-between;
   
   padding: 0 8rem;
  
-  background-color: rgb(8, 4, 4);
+  background-color: rgba(8, 4, 4, 0);
   margin-top: 6rem;
   width: 80vw;
   display: flex;
